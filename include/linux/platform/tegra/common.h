@@ -48,6 +48,7 @@ u32 tegra_get_fuse_opt_subrevision(void);
 enum tegra_revision tegra_chip_get_revision(void);
 void __init display_tegra_dt_info(void);
 
+bool tegra_is_vpr_resize_supported(void);
 void tegra_register_idle_unidle(int (*do_idle)(void *),
 				int (*do_unidle)(void *),
 				void *data);
